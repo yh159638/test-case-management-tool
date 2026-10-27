@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@utility btn {
+  @apply inline-flex cursor-pointer items-center justify-center rounded-md px-3 py-1.5 text-sm font-medium transition disabled:opacity-50;
+}
+@utility btn-primary {
+  @apply btn bg-indigo-600 text-white hover:bg-indigo-700;
+}
+@utility btn-ghost {
+  @apply btn border border-slate-300 bg-white text-slate-700 hover:bg-slate-50;
+}
+@utility btn-danger {
+  @apply btn bg-red-600 text-white hover:bg-red-700;
+}
+@utility input {
+  @apply w-full rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500;
+}
+@utility label {
+  @apply mb-1 block text-sm font-medium text-slate-700;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
